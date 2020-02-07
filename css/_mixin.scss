@@ -1,0 +1,84 @@
+@import "_color.scss";
+// ミックスインの定義
+
+
+@mixin button-hex {
+	font-size: 2.5rem;
+    line-height: 38px;
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 59px;
+    transition: .1s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+	border-top: 2px solid $btnColor;
+    border-bottom: 2px solid $btnColor;
+	background-color: $btnColor;
+	padding: 9px 40px;
+	margin-top: 26px;
+	white-space: nowrap;
+    font-weight: bold;
+}
+
+@mixin button-hex-before-after {
+	position: absolute;
+    content: '';
+    transition: .1s ease-in-out;
+    transform: perspective(12px);
+    transform: rotate(45deg);
+    border: 0;
+    background-color: $btnColor;
+}
+
+@mixin button-hex-before {
+	left: -22px;
+    top: 7px;
+    width: 42px;
+    height: 42px;
+    border-bottom: 2px solid $btnColor;
+    border-left: 2px solid $btnColor;
+}
+
+@mixin button-hex-after {
+    right: -22px;
+    top: 7px;
+    width: 42px;
+    height: 42px;
+    border-top: 2px solid $btnColor;
+    border-right: 2px solid $btnColor;
+}
+
+@mixin heading {
+    font-size: 2.8rem;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: $btnColor;
+    @include sp {
+        font-size: 2.0rem;
+    }
+}
+
+@mixin btn-form {
+    background-color: $btnColor;
+    color: #ffffff;
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding: 14px 40px;
+	display: inline-block;
+}
+
+
+
+ // float 解除
+ @mixin clear {
+
+ 	&::after {
+ 		content: "";
+ 		display: block;
+ 		clear: both;
+ 	}
+ }

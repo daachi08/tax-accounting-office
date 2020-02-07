@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/*
+    footer
+*/
+.footer-wrapper {
+  padding: 10px 0;
+  background-color: #092D44;
+}
+
+.footer-text {
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .footer-text {
+    font-size: 1.3rem;
+  }
+}
+
+/*
+    footer end
+*/

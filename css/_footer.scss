@@ -1,0 +1,22 @@
+@import "_color.scss";
+@import "_typography.scss";
+@import "_mixin.scss";
+@import "_responsive.scss";
+/*
+    footer
+*/
+.footer-wrapper {
+    padding: 10px 0;
+    background-color: $AccentColor;
+}
+
+.footer-text {
+    text-align: center;
+    color: $SubColor;
+    @include sp {
+        font-size: 1.3rem;
+    }
+}
+/*
+    footer end
+*/
